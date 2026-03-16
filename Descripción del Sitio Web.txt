@@ -1,0 +1,138 @@
+DOCUMENTACIÓN GENERAL DEL SITIO WEB
+PROYECTO: SITIO WEB CORPORATIVO SMV Medical
+VERSIÓN: 1.0
+
+DESCRIPCIÓN GENERAL
+
+El presente proyecto corresponde al sitio web informativo de SMV Medical.
+La página fue desarrollada con el objetivo de presentar información sobre los equipos médicos y veterinarios comercializados por la empresa, así como los servicios relacionados.
+
+El sitio permite a los usuarios consultar las características de los equipos, visualizar información técnica básica y acceder a los medios de contacto de la empresa.
+
+El diseño del sitio es adaptable a diferentes tamaños de pantalla, permitiendo su visualización en computadoras de escritorio, laptops, tablets y dispositivos móviles.
+
+TECNOLOGÍAS UTILIZADAS
+
+El desarrollo del sitio se realizó utilizando las siguientes tecnologías:
+
+Angular
+Tailwind CSS
+HTML
+CSS
+TypeScript
+
+El sitio funciona como una aplicación web de una sola página (SPA), lo que permite una navegación rápida entre secciones sin necesidad de recargar completamente la página.
+
+ESTRUCTURA DEL SITIO
+
+El sitio se encuentra organizado en las siguientes secciones principales:
+
+Inicio
+Presentación general del sitio y acceso a las principales secciones.
+
+Equipos Médicos
+Listado de equipos médicos disponibles con descripción general, características principales e información técnica.
+
+Equipos Veterinarios
+Sección dedicada a equipos de diagnóstico veterinario con descripción de sus principales funciones.
+
+Servicios
+Descripción de los servicios ofrecidos por la empresa relacionados con instalación, soporte o asesoría de equipos.
+
+Nosotros
+Información general sobre la empresa.
+
+Contacto
+Sección destinada a facilitar el contacto con la empresa para solicitar información adicional.
+
+CONTENIDO DEL SITIO
+
+El sitio incluye los siguientes tipos de contenido:
+
+Imágenes de equipos
+Descripción general de productos
+Listados de características técnicas
+Archivos PDF con especificaciones técnicas
+Información institucional de la empresa
+
+Todo el contenido está organizado dentro de la estructura del proyecto para facilitar su mantenimiento y actualización.
+
+OBJETIVO DEL SITIO
+
+El objetivo del sitio es proporcionar un medio informativo donde los usuarios puedan:
+
+Consultar los equipos disponibles.
+Conocer las características principales de cada producto.
+Obtener información general sobre la empresa.
+Acceder a los medios de contacto para solicitar información adicional.
+
+CONSIDERACIONES TÉCNICAS
+
+El sitio web no utiliza base de datos.
+Todo el contenido mostrado corresponde a información estática incluida en el proyecto.
+
+La estructura del sitio permite agregar nuevos equipos o actualizar contenido mediante la modificación de los archivos correspondientes dentro del proyecto.
+
+El sitio está preparado para ser alojado en un servicio de hosting web estándar.
+
+FORMULARIO DE CONTACTO Y SERVICIO DE CORREO
+
+El sitio web incluye un formulario de contacto que permite a los usuarios enviar solicitudes de información directamente desde la página.
+
+El envío de correos se realiza mediante el servicio externo EmailJS, el cual permite enviar mensajes de correo electrónico desde el cliente sin necesidad de implementar un servidor backend.
+
+La información ingresada por el usuario en el formulario (por ejemplo: nombre, correo electrónico, asunto y mensaje) es enviada mediante EmailJS hacia la dirección de correo electrónico configurada para la empresa.
+
+La integración con EmailJS se encuentra configurada dentro del proyecto utilizando los siguientes elementos:
+
+Service ID
+Template ID
+Public Key
+
+Estos identificadores permiten conectar el formulario del sitio con la plantilla de correo configurada dentro de la plataforma EmailJS.
+
+Para el correcto funcionamiento del formulario de contacto es necesario que:
+
+El servicio EmailJS permanezca activo.
+
+La plantilla de correo configurada dentro de EmailJS no sea eliminada.
+
+Las credenciales utilizadas en el proyecto permanezcan vigentes.
+
+En caso de que las credenciales o la plantilla de EmailJS sean modificadas o eliminadas, será necesario actualizar la configuración correspondiente dentro del código del proyecto.
+
+El servicio EmailJS utiliza una cuenta previamente configurada para gestionar el envío de correos generados desde el sitio web.
+
+DEPENDENCIAS EXTERNAS DEL PROYECTO
+
+El funcionamiento del sitio web depende de las siguientes tecnologías y servicios externos:
+
+Angular
+Framework utilizado para la construcción de la aplicación web y la gestión de componentes, rutas y estructura del proyecto.
+
+Tailwind CSS
+Framework de estilos utilizado para el diseño visual y la adaptación del sitio a diferentes tamaños de pantalla.
+
+EmailJS
+Servicio externo utilizado para gestionar el envío de correos desde el formulario de contacto sin necesidad de un servidor backend.
+
+Estas dependencias permiten el funcionamiento correcto del sitio web y deben mantenerse disponibles para garantizar la operación normal de la página.
+
+OBSERVACIONES
+
+Se recomienda mantener la estructura de carpetas y archivos del proyecto para evitar errores en la carga de recursos como imágenes o documentos.
+
+En caso de requerir modificaciones futuras, estas pueden realizarse directamente en los componentes correspondientes del proyecto.
+
+RESUMEN TÉCNICO DEL PROYECTO
+
+El presente proyecto corresponde al desarrollo del sitio web informativo de SMV Medical.
+La aplicación fue desarrollada utilizando el framework Angular y el sistema de estilos Tailwind CSS.
+
+El sitio funciona como una aplicación web de una sola página (SPA), lo que permite una navegación fluida entre las diferentes secciones sin necesidad de recargar completamente la página.
+
+La página presenta información sobre los equipos médicos y veterinarios comercializados por la empresa, así como los servicios ofrecidos y los medios de contacto disponibles para los usuarios.
+
+El formulario de contacto del sitio se encuentra integrado con el servicio EmailJS, el cual permite enviar correos electrónicos directamente desde el sitio web sin requerir un servidor backend.
+
+El diseño del sitio es responsivo y se adapta a diferentes tamaños de pantalla, incluyendo computadoras de escritorio, laptops, tablets y dispositivos móviles.

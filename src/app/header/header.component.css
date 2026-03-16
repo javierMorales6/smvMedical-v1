@@ -1,0 +1,13 @@
+/* dropdown menu fix */
+
+:host ::ng-deep .group:hover > ul {
+  display: block !important;
+}
+
+:host ::ng-deep ul {
+  z-index: 9999;
+}
+
+:host ::ng-deep li {
+  position: relative;
+}

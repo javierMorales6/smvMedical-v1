@@ -1,0 +1,87 @@
+<div class="w-full mt-12">
+    <div class="flex">
+        <!-- carrusel -->
+        <div class="w-full">
+            <app-carousel></app-carousel>
+        </div>
+    </div>
+
+    <!-- linea -->
+    <div class="border-t-2 border-smv mx-10 my-4 shadow-md"></div>
+
+    <!-- seccion eq -->
+    <div class="text-center pt-8 pb-12 px-4">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Descubre Nuestros Equipos de Ultrasonido</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Tecnología de Vanguardia para Diagnósticos de Alta Calidad
+        </p>
+    </div>
+
+    <!-- tarjetas opcion de ponerles shadow-lg-->
+    <div class="flex flex-wrap justify-center gap-8 px-8 pb-12">
+        <!-- tarjeta 1 -->
+        <div class="w-full max-w-sm bg-white rounded-xl  overflow-hidden 
+            transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="h-64 overflow-hidden mt-5">
+                <img src="/images/gab1.png" alt="Equipos de Gabinete"
+                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-6 space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800">Equipos de Gabinete</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Aplicaciones avanzadas para maximizar la precisión y eficiencia en tus diagnósticos.
+                </p>
+                <button [routerLink]="['/mindray']"
+                    fragment="mindray" class="w-full py-3 bg-smv text-white font-semibold rounded-lg 
+                    hover:bg-green-600 transition duration-300 ease-in-out 
+                    transform hover:-translate-y-1 hover:scale-105" [routerLink]="['/mindray']" [fragment]="'mindray'">
+                    Descubre más
+
+                </button>
+            </div>
+        </div>
+
+        <!-- tarjeta 2 -->
+        <div class="w-full max-w-sm bg-white rounded-xl overflow-hidden 
+            transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="h-64 overflow-hidden mt-5">
+                <img src="/images/portatiles.png" alt="Equipos Portátiles"
+                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-6 space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800">Equipos Portátiles</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Lleva la confianza de obtener un buen diagnóstico a donde la necesites.
+                </p>
+                <button [routerLink]="['/mindray']"
+                    fragment="portatiles" class="w-full py-3 bg-smv text-white font-semibold rounded-lg 
+                    hover:bg-green-600 transition duration-300 ease-in-out 
+                    transform hover:-translate-y-1 hover:scale-105" [routerLink]="['/mindray']" [fragment]="'portatiles'">
+                    Descubre más
+                </button>
+            </div>
+        </div>
+
+        <!-- tarjeta 3 -->
+        <div class="w-full max-w-sm bg-white rounded-xl  overflow-hidden 
+            transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <div class="h-64 overflow-hidden mt-5">
+                <img src="/images/Veterinario.png" alt="Equipos de Veterinaria"
+                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-6 space-y-4 ">
+                <h3 class="text-2xl font-bold text-gray-800">Equipos de Veterinaria</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Soluciones especializadas para el diagnóstico veterinario
+                </p>
+                
+                <button [routerLink]="['/veterinario']"
+                    fragment="veterinario" class="w-full py-3 bg-smv text-white font-semibold rounded-lg 
+                    hover:bg-green-600 transition duration-300 ease-in-out 
+                    transform hover:-translate-y-1 hover:scale-105" [routerLink]="['/veterinario']" [fragment]="'veterinario'">
+                    Descubre más
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
